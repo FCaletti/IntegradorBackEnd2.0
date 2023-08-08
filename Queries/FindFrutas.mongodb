@@ -1,0 +1,12 @@
+use('DBMercado')
+
+//db.Frutas.find().sort({nombre:1})
+/*
+db.Frutas.find({
+   $and:[
+      {"importe":{"$gt":250}},
+      {"nombre":/an/},
+   ]
+}).sort({nombre:1})
+*/
+db.Frutas.find({"nombre":/an/i})
